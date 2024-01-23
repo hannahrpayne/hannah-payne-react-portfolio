@@ -109,11 +109,15 @@ nav.navbar {
   transition: 0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
+  padding: 10px 0;
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
+}
+
+.navbar-brand img{
+  height: 60px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -262,7 +266,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/binary-background.jpg') ;
-  background-position: top-center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -287,7 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p {
-  color: #b8b8b8;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 0.8px;
   width: 96%;
@@ -373,11 +376,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: auto;
   position: relative;
+  
+}
+
+.item{
+
 }
 
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
+
 }
 
 .background-image-left {
@@ -499,6 +508,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   transition: 0.5s ease-in-out;
   width: 100%;
+  color: #fff;
+}
+
+.proj-imgbx img {
+  object-fit: cover;
+  max-height: 325px;
+  min-height: 290px;
+  object-position: center top;
+  width: 100%;
+  overflow: hidden;
 }
 
 .proj-imgbx:hover .proj-txtx{
@@ -509,6 +528,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
+  
 
 }
 
@@ -526,4 +546,72 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px 0 50px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer img {
+  height: 80px
+}
+
+img.upwork {
+  width: 50px ;
+}
+
+@media screen and (max-width: 1050px) {
+  .banner img {
+    height: 400px;
+  }
+  .banner h1 {
+    font-size: 50px; 
+  }
+
+  .banner {
+    margin-top: 0;
+    padding: 220px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 875px){
+  .banner img {
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner p{
+    font-size: 16px;
+  }
+  .skill{
+    padding: 0 5px 0 5px;
+  }
+  #basic-navbar-nav{
+    margin:0;
+  }
+
+  span.navbar-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width: 765px) {
+  .skill{
+    padding: 0 10px 0 10px;
+  }
+  .footer-logo{
+    margin: 15px;
+  }
+
 }

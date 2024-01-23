@@ -18,11 +18,11 @@ export const Skills = () => {
           items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
+          breakpoint: { max: 1024, min: 627 },
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 627, min: 0 },
           items: 1
         }
       };
@@ -36,23 +36,35 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                            <p>I have been learning and sharpening my skills for over 2 years. I have a thirst for knowledge and learning multiple formats of both Front-End and Back-End languages.</p>
                             <Carousel responsive={responsive} infinite={true} className='skills-slider' >
                                 <div className='item'>
                                     <img src={meter1} alt='image' />
                                     <h5>HTML</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt='image' />
+                                    <img src={meter1} alt='image' />
                                     <h5>CSS</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter3} alt='image' />
+                                    <img src={meter2} alt='image' />
                                     <h5>Wordpress</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter1} alt='image' />
-                                    <h5>JavaScript / React</h5>
+                                    <img src={meter3} alt='image' />
+                                    <h5>JavaScript</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter2} alt='image' />
+                                    <h5>React</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter3} alt='image' />
+                                    <h5>Github</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter2} alt='image' />
+                                    <h5>Email Development</h5>
                                 </div>
                             </Carousel>
                         </div>  

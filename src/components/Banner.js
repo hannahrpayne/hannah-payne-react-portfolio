@@ -3,6 +3,10 @@ import React from "react"
 import {Col, Container, Row} from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from '../assets/img/header-img.svg';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import {Contact} from '../components/Contact';
+
 
 export const Banner = () => {
 
@@ -50,11 +54,16 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7} >
-                        <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hello I'm a `}<span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  </p>
-                        <button onClick={()=>console.log('connect')}>Let's connect<ArrowRightCircle size={25} /></button>
+                    <Col xs={12} md={6} xl={7} > 
+                        <TrackVisibility>
+                        {({ isVisible }) =>
+                            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                <span className="tagline">Hannah Payne's Portfolio</span>
+                                <h1>{`Hello I'm a `}<br></br><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  </p>
+                                <button href={Contact} >Let's connect<ArrowRightCircle size={25} /></button>
+                            </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
                        <img src={headerImg} alt="Header Image" />
