@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 import logo from '../assets/img/logo-tranparent (1).png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -45,12 +48,12 @@ export const NavBar = () => {
               </Nav>
               <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt=""/></a>
-                    <a href="#"><img className="upwork" src={navIcon2} alt=""/></a>
-                    <a href="#"><img src={navIcon3} alt=""/></a>
+                    {/* <a href="#"><img src={navIcon1} alt=""/></a> */}
+                    <a href="https://www.upwork.com/freelancers/~016f27977ff8f24a7c" target="_blank" ><img className="upwork" src={navIcon2} alt=""/></a>
                 </div>
-                <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
-              </span>
+
+                <Link to='contact' ><button className="vvd"><span>Let’s Connect</span></button></Link>
+                  </span>
             </Navbar.Collapse>
           </Container>
         </Navbar>

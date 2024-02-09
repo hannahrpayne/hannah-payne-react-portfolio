@@ -15,9 +15,9 @@ export const Footer = () => {
                 </Col>
                 <Col sm={6} className="text-center text-sm-end">
                     <div className="social-icon">
-                        <a href=""><img src={navIcon1}></img></a>
-                        <a className="upwork" href=""><img  src={navIcon2}></img></a>
-                        <a href=""><img src={navIcon3}></img></a>
+                        {/* <a href=""><img src={navIcon1}></img></a> */}
+                        <a className="upwork" href="https://www.upwork.com/freelancers/~016f27977ff8f24a7c" target="_blank" ><img  src={navIcon2}></img></a>
+                        {/* <a href=""><img src={navIcon3}></img></a> */}
                     </div>
                     <p>CopyRight 2023. All Right Reserved Hannah Payne</p>
                 </Col>

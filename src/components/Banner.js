@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import React from "react"
 import {Col, Container, Row} from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons";
-import headerImg from '../assets/img/header-img.svg';
+import headerImg from '../assets/img/Untitled_Artwork.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import {Contact} from '../components/Contact';
+import { Link } from 'react-router-dom';
 
 
 export const Banner = () => {
@@ -60,13 +61,13 @@ export const Banner = () => {
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tagline">Hannah Payne's Portfolio</span>
                                 <h1>{`Hello I'm a `}<br></br><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  </p>
-                                <button href={Contact} >Let's connect<ArrowRightCircle size={25} /></button>
+                                <p>A am a Utah-based front-end developer with over 2 years of coding experience, dedicated to creating visually appealing and user-friendly websites.</p>
+                                <Link to='contact' ><button to={Contact} >Let's connect<ArrowRightCircle size={25} /></button></Link>
                             </div>}
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
-                       <img src={headerImg} alt="Header Image" />
+                       <img className="header-image" src={headerImg} alt="Header Image" />
                     </Col>
                 </Row>
             </Container>
