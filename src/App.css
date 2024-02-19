@@ -323,7 +323,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 15s linear infinite;
   height: 700px;
-  filter: drop-shadow(0 0 0.75rem rgb(20, 197, 228));
+  filter: drop-shadow(0 0 1rem rgb(20, 197, 228));
 
 }
 
