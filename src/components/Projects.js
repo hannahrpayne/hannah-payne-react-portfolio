@@ -41,13 +41,13 @@ export const Projects = () => {
             title: "Hannah Payne Portfolio 1.0" ,
             description: "The first version of my Front End Developer Portfolio using HTML and CSS",
             imgUrl: projImg6,
-            url: ''
+            url: 'https://hannah-payne-portfolio-1.netlify.app/'
         },
         {
             title: "Email Advertisement" ,
             description: "A responsive email advertisement for local artist ",
             imgUrl: projImg4,
-            url: ''
+            url: 'https://kacielynn-email-advertisement.netlify.app/'
         },
         {
             title: "Feather Stone Books" ,
@@ -62,19 +62,19 @@ export const Projects = () => {
             title: "Film Finder" ,
             description: "Application made using HTMl, CSS and Javascript that takes an API to show you a movie recommendation based off the genre you choose.",
             imgUrl: projImg3,
-            url: "" 
+            url: "https://filmfinderapplication.netlify.app/" 
         },
         {
             title: "Meditation App" ,
             description: "An application with the goal to help you relax by playing your sound of choice of relaxing waves or calming rain. It features a circular timer status to keep track of your remaining times. Created with CSS, HTML and vanilla JavaScript",
             imgUrl: projImg7,
-            url: ''
+            url: 'https://sunandrainmeditationapp.netlify.app/'
         },
         {
             title: "Pixel Art Creator" ,
             description: "Create pixel art. Choose the color and size of grid. Created with CSS, HTML and vanilla JavaScript",
             imgUrl: projImg8,
-            url: ''
+            url: 'https://main--pixelart-creator.netlify.app/'
         }
     ]
 
