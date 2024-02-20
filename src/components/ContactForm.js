@@ -5,45 +5,45 @@ import {Col, Container, Row} from "react-bootstrap";
 
 
 export const ContactForm = () => {
-    const formInitialDetails = {
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: ""
-    };
+    // const formInitialDetails = {
+    //     firstName: "",
+    //     lastName: "",
+    //     email: "",
+    //     phone: "",
+    //     message: ""
+    // };
 
-    const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtonText] = useState("Send");
-    const [status, setStatus] = useState({});
+    // const [formDetails, setFormDetails] = useState(formInitialDetails);
+    // const [buttonText, setButtonText] = useState("Send");
+    // const [status, setStatus] = useState({});
     
-    const onFormUpdate = (category, value) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value
-        })
-    };
+    // const onFormUpdate = (category, value) => {
+    //     setFormDetails({
+    //         ...formDetails,
+    //         [category]: value
+    //     })
+    // };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtonText('Sending...');
-        let response = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-            "Content-Type" : "application/json;charset=utf-8",
-            },
-            body:JSON.stringify(formDetails),
-        });
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setButtonText('Sending...');
+    //     let response = await fetch("/api/contact", {
+    //         method: "POST",
+    //         headers: {
+    //         "Content-Type" : "application/json;charset=utf-8",
+    //         },
+    //         body:JSON.stringify(formDetails),
+    //     });
         
-        let result = await response.json();
-        setButtonText("Send");
-        setFormDetails(formInitialDetails);
-        if (result.code === 200) {
-            setStatus({success: true, message: 'Message sent successfully'});
-        } else {
-            setStatus({success: false, message:"Something went wrong, please try again later"})
-        }
-    };
+    //     let result = await response.json();
+    //     setButtonText("Send");
+    //     setFormDetails(formInitialDetails);
+    //     if (result.code === 200) {
+    //         setStatus({success: true, message: 'Message sent successfully'});
+    //     } else {
+    //         setStatus({success: false, message:"Something went wrong, please try again later"})
+    //     }
+    // };
 
     return (
         <>
@@ -52,7 +52,7 @@ export const ContactForm = () => {
             
             <Container>
                         <h2>Get In Touch</h2>
-                        <form onSubmit={handleSubmit} name="contact" data-netlify="true">
+                        <form  name="contact" data-netlify="true">
                             <input
                             type="hidden"
                             name="form-name"
@@ -109,16 +109,10 @@ export const ContactForm = () => {
                                     placeholder="Message" 
                                     // onChange={(e) => onFormUpdate("message", e.target.value)} 
                                     />
-                                <button type="submit"><span>{buttonText}</span></button>
+                                <button type="submit"><span>Send</span></button>
                                 </Col>
 
-                                {
-                                status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? "danger" : "success"}>
-                                            {status.message}
-                                        </p>
-                                    </Col>}
+                                
                             </Row>
                         </form>
                     
