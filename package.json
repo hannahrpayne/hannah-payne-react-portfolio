@@ -39,7 +39,7 @@
     
 
     "test": "react-scripts test",
-    "watch": "nodemon server/index.js",
+    
 
     "eject": "react-scripts eject"
   },
