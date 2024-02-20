@@ -5,24 +5,26 @@ import {Col, Container, Row} from "react-bootstrap";
 
 
 export const ContactForm = () => {
-    // const formInitialDetails = {
-    //     firstName: "",
-    //     lastName: "",
-    //     email: "",
-    //     phone: "",
-    //     message: ""
-    // };
+    const formInitialDetails = {
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: ""
+    };
 
-    // const [formDetails, setFormDetails] = useState(formInitialDetails);
+    const [formDetails, setFormDetails] = useState(formInitialDetails);
     // const [buttonText, setButtonText] = useState("Send");
     // const [status, setStatus] = useState({});
     
-    // const onFormUpdate = (category, value) => {
-    //     setFormDetails({
-    //         ...formDetails,
-    //         [category]: value
-    //     })
-    // };
+    const onFormUpdate = (category, value) => {
+        setFormDetails({
+            ...formDetails,
+            [category]: value
+        })
+    };
+
+    console.log(formDetails)
 
     // const handleSubmit = async (e) => {
     //     e.preventDefault();
@@ -52,22 +54,22 @@ export const ContactForm = () => {
             
             <Container>
                         <h2>Get In Touch</h2>
-                        <form  name="contact" data-netlify="true">
+                        <form  name="contact" method="POST">
                             <input
                             type="hidden"
                             name="form-name"
                             value="contact"
                              />
-                        {/* <form> */}
+                        
                             <Row>
                                 <Col sm={6} className='px-1'>
                                     <input
                                     type="text" 
                                     id="first-name"
                                     name="first-name"
-                                    // value={formDetails.firstName} 
+                                    value={formDetails.firstName} 
                                     placeholder="First Name" 
-                                    // onChange={(e) => onFormUpdate("firstName", e.target.value)} 
+                                    onChange={(e) => onFormUpdate("firstName", e.target.value)} 
                                     />
                                 </Col>
                                 <Col sm={6} className='px-1'>
@@ -75,9 +77,9 @@ export const ContactForm = () => {
                                     type="text" 
                                     id="last-name"
                                     name="last-name"
-                                    // value={formDetails.lastName} 
+                                    value={formDetails.lastName} 
                                     placeholder="Last Name" 
-                                    // onChange={(e) => onFormUpdate("lastName", e.target.value)} 
+                                    onChange={(e) => onFormUpdate("lastName", e.target.value)} 
                                     />
                                 </Col>
                                 <Col sm={6} className='px-1'>
@@ -85,9 +87,9 @@ export const ContactForm = () => {
                                     type="email" 
                                     id="email"
                                     name="email"
-                                    // value={formDetails.email} 
+                                    value={formDetails.email} 
                                     placeholder="Email" 
-                                    // onChange={(e) => onFormUpdate("email", e.target.value)} 
+                                    onChange={(e) => onFormUpdate("email", e.target.value)} 
                                     />
                                 </Col>
                                 <Col sm={6} className='px-1'>
@@ -95,9 +97,9 @@ export const ContactForm = () => {
                                     type="tel" 
                                     id="phone"
                                     name="phone"
-                                    // value={formDetails.phone} 
+                                    value={formDetails.phone} 
                                     placeholder="Phone Number" 
-                                    // onChange={(e) => onFormUpdate("phone", e.target.value)} 
+                                    onChange={(e) => onFormUpdate("phone", e.target.value)} 
                                     />
                                 </Col>
                                 <Col>
@@ -105,9 +107,9 @@ export const ContactForm = () => {
                                     rows={6} 
                                     name="message"
                                     id="message"
-                                    // value={formDetails.message} 
+                                    value={formDetails.message} 
                                     placeholder="Message" 
-                                    // onChange={(e) => onFormUpdate("message", e.target.value)} 
+                                    onChange={(e) => onFormUpdate("message", e.target.value)} 
                                     />
                                 <button type="submit"><span>Send</span></button>
                                 </Col>
