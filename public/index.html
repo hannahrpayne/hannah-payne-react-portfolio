@@ -29,58 +29,51 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <form name="contact" data-netlify="true" hidden >
-      <Row>
-        <Col sm={6} className='px-1'>
-            <input
+    <form name="contact" data-netlify="true" hidden>
+      
+        <div>
+          <input
             type="text" 
             id="first-name"
-            name="first-name"
-            placeholder="First Name" 
+            name="first-name" 
+            />
+        </div>
             
-            />
-        </Col>
-        <Col sm={6} className='px-1'>
-            <input 
-            type="text" 
-            id="last-name"
-            name="last-name"
-            placeholder="Last Name" 
-             
-            />
-        </Col>
-        <Col sm={6} className='px-1'>
-            <input 
+        
+        <div>
+          <input 
+              type="text" 
+              id="last-name"
+              name="last-name" 
+              />
+        </div>
+            
+        <div>
+          <input 
             type="email" 
             id="email"
             name="email"
             placeholder="Email" 
             
             />
-        </Col>
-        <Col sm={6} className='px-1'>
-            <input 
+        </div>
+      
+        <div>
+          <input 
             type="tel" 
             id="phone"
             name="phone"
-            placeholder="Phone Number" 
+            placeholder="Phone Number"/>
+        </div>
             
-            />
-        </Col>
-        <Col>
-            <textarea 
+        <div>
+          <textarea
             rows={6} 
             name="message"
             id="message"
-            value={formDetails.message} 
-            placeholder="Message" 
-            
             ></textarea>
-        <button type="submit"><span>Send</span></button>
-        </Col>
-
-        
-    </Row>
+        </div>
+            
     </form>
     <!--
       This HTML file is a template.

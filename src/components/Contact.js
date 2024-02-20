@@ -10,11 +10,11 @@ import { ContactForm } from "./ContactForm";
 export const Contact = () => {
    
 
-    useEffect(() => {
-        fetch("/api")
-        .then((res) => res.json())
-        .then((data) => { console.log(data)})
-      }, [])
+    // useEffect(() => {
+    //     fetch("/api")
+    //     .then((res) => res.json())
+    //     .then((data) => { console.log(data)})
+    //   }, [])
     
     return (
         <div>
