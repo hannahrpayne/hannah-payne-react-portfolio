@@ -52,7 +52,7 @@ export const NavBar = () => {
                     <a href="https://www.upwork.com/freelancers/~016f27977ff8f24a7c" target="_blank" ><img className="upwork" src={navIcon2} alt=""/></a>
                 </div>
 
-                <Link to='contact' ><button className="vvd"><span>Let’s Connect</span></button></Link>
+                <Link to='contact' target="_blank" ><button className="vvd"><span>Let’s Connect</span></button></Link>
                   </span>
             </Navbar.Collapse>
           </Container>

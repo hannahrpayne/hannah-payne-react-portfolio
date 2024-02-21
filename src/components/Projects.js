@@ -10,7 +10,7 @@ import projImg3 from '../assets/img/projects/film-finder.jpg';
 import projImg4 from '../assets/img/projects/kacielynnart-email-ad3.png';
 import projImg5 from '../assets/img/projects/rose-floral-co.jpg';
 import projImg6 from '../assets/img/projects/hannah-payne-portfolio-1.0.jpg';
-import projImg7 from '../assets/img/projects/meditation-app.jpg';
+import projImg7 from '../assets/img/projects/meditation.jpg';
 import projImg8 from '../assets/img/projects/pixel-art-genorator.jpg';
 import projImg9 from '../assets/img/projects/screencapture-jamminplaylistcreator-netlify-app-2024-01-31-19_33_23.jpg'
 import resume from '../assets/pdf/hannah-payne-resume.pdf';
@@ -27,13 +27,13 @@ export const Projects = () => {
         },
         {
             title: "Rose Floral Co" ,
-            description: "The goal for this project was to create a webpage for the client that would showcase her work and make contacting her seamless and visually catching. Using WordPress plug-ins and templates to create a webpage that is easy to navigate.",
+            description: "The goal for this project was to create a WordPress website for the client that would showcase her work and make contacting her seamless and visually catching. Using WordPress plug-ins and templates to create a webpage that is easy to navigate.",
             imgUrl: projImg5,
             url: ''
         },
         {
             title: "Jammin" ,
-            description: "Spotify application for making new playlist using Spotify's API",
+            description: "Spotify application where a user can log into their account and make playlists by using Spotify's API to search songs by name and create a playlist all in one place.",
             imgUrl: projImg9,
             url: 'https://jamminplaylistcreator.netlify.app/'
         },

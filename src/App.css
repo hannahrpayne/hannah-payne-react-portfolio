@@ -294,6 +294,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   width: 96%;
+  text-align:justify;
 }
 
 .banner button {
@@ -321,9 +322,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner img {
-  animation: updown 15s linear infinite;
+  animation: updown 5s linear infinite;
   height: 700px;
-  filter: drop-shadow(0 0 1rem rgb(20, 197, 228));
+  filter: drop-shadow(0 0 2rem rgb(20, 197, 228));
 
 }
 
@@ -372,6 +373,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75 px 0;
+  text-align:justify;
 }
 
 .skill h5 {
@@ -421,8 +423,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
   width: 56%;
+  text-align: justify;
+  
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -665,7 +668,7 @@ img.upwork {
 @media screen and (max-width: 875px){
 
   .banner img{
-    height: 350px;
+    height: 450px;
   }
 
   .banner h1 {

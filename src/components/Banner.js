@@ -61,8 +61,8 @@ export const Banner = () => {
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tagline">Hannah Payne's Portfolio</span>
                                 <h1>{`Hello I'm a `}<br></br><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
-                                <p>A am a Utah-based front-end developer with over 2 years of coding experience, dedicated to creating visually appealing and user-friendly websites.</p>
-                                <Link to='contact' ><button to={Contact} >Let's connect<ArrowRightCircle size={25} /></button></Link>
+                                <p>HP is a Utah-based front-end developer with over 2 years of experience, dedicated to creating visually appealing and user-friendly websites.</p>
+                                <Link to='contact' target="_blank" ><button to={Contact} >Let's connect<ArrowRightCircle size={25} /></button></Link>
                             </div>}
                         </TrackVisibility>
                     </Col>

@@ -36,7 +36,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>I have been learning and sharpening my skills for over 2 years. I have a thirst for knowledge and learning multiple formats of both Front-End and Back-End languages.</p>
+                            <p>I have a thirst for knowledge and learning multiple formats of both Front-End and Back-End languages.</p>
                             <Carousel responsive={responsive} infinite={true} className='skills-slider' >
                                 <div className='item'>
                                     <img src={meter1} alt='image' />
@@ -47,12 +47,12 @@ export const Skills = () => {
                                     <h5>CSS</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt='image' />
-                                    <h5>Wordpress</h5>
-                                </div>
-                                <div className='item'>
                                     <img src={meter3} alt='image' />
                                     <h5>JavaScript</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter2} alt='image' />
+                                    <h5>Wordpress</h5>
                                 </div>
                                 <div className='item'>
                                     <img src={meter2} alt='image' />

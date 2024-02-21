@@ -22,11 +22,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
   </Route>
 ));
 function App() {
-  // useEffect(() => {
-  //   fetch('/api')
-  //   .then((res) => res.json())
-  //   .then((data) => { console.log(data)})
-  // }, [])
+
 
 
   return (
