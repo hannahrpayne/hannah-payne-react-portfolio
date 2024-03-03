@@ -13,7 +13,7 @@ import projImg6 from '../assets/img/projects/hannah-payne-portfolio-1.0.jpg';
 import projImg7 from '../assets/img/projects/meditation.jpg';
 import projImg8 from '../assets/img/projects/pixel-art-genorator.jpg';
 import projImg9 from '../assets/img/projects/screencapture-jamminplaylistcreator-netlify-app-2024-01-31-19_33_23.jpg'
-import resume from '../assets/pdf/hannah-payne-resume.pdf';
+import resume from '../assets/pdf/hannahpayne-resume.pdf';
 
 
 export const Projects = () => {
