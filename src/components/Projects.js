@@ -12,7 +12,8 @@ import projImg5 from '../assets/img/projects/rose-floral-co.jpg';
 import projImg6 from '../assets/img/projects/hannah-payne-portfolio-1.0.jpg';
 import projImg7 from '../assets/img/projects/meditation.jpg';
 import projImg8 from '../assets/img/projects/pixel-art-genorator.jpg';
-import projImg9 from '../assets/img/projects/screencapture-jamminplaylistcreator-netlify-app-2024-01-31-19_33_23.jpg'
+import projImg9 from '../assets/img/projects/screencapture-jamminplaylistcreator-netlify-app-2024-01-31-19_33_23.jpg';
+import projImg10 from '../assets/img/projects/appointment-planner.jpg';
 import resume from '../assets/pdf/hannahpayne-resume.pdf';
 
 
@@ -38,10 +39,10 @@ export const Projects = () => {
             url: 'https://jamminplaylistcreator.netlify.app/'
         },
         {
-            title: "Hannah Payne Portfolio 1.0" ,
-            description: "The first version of my Front End Developer Portfolio using HTML and CSS",
-            imgUrl: projImg6,
-            url: 'https://hannah-payne-portfolio-1.netlify.app/'
+            title: "Appointment Planner" ,
+            description: "App for creating contacts and appointments using React ",
+            imgUrl: projImg10,
+            url: 'https://the-appointment-planner.netlify.app/'
         },
         {
             title: "Email Advertisement" ,
@@ -49,6 +50,13 @@ export const Projects = () => {
             imgUrl: projImg4,
             url: 'https://kacielynn-email-advertisement.netlify.app/'
         },
+        {
+            title: "Hannah Payne Portfolio 1.0" ,
+            description: "The first version of my Front End Developer Portfolio using HTML and CSS",
+            imgUrl: projImg6,
+            url: 'https://hannah-payne-portfolio-1.netlify.app/'
+        },
+    
         {
             title: "Feather Stone Books" ,
             description: "Simple website to exhibit a potential local book store.",
