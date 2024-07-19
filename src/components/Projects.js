@@ -14,6 +14,7 @@ import projImg7 from '../assets/img/projects/meditation.jpg';
 import projImg8 from '../assets/img/projects/pixel-art-genorator.jpg';
 import projImg9 from '../assets/img/projects/screencapture-jamminplaylistcreator-netlify-app-2024-01-31-19_33_23.jpg';
 import projImg10 from '../assets/img/projects/appointment-planner.jpg';
+import projImg11 from '../assets/img/projects/Haley Stark.png';
 import resume from '../assets/pdf/hannahpayne-resume.pdf';
 
 
@@ -22,9 +23,15 @@ export const Projects = () => {
     const frontEndProjects = [
         {
             title: "Artist Website Portfolio" ,
-            description: "Portfolio created for a client to present their work as an artist. A responsive website that features a gallery of the art, a contact page, links to social media, and multiple custom domain names. The webpage was created using HTML, CSS and some Vanilla JavaScript. ",
+            description: "Portfolio created for a client to present their work as an artist. A responsive website that features a gallery of the art, a contact page, links to social media, and multiple custom domain names. The webpage is designed, developed and managed by me. The webpage was created using HTML, CSS and some Vanilla JavaScript.",
             imgUrl: projImg1,
             url: "https://www.kacielynnart.com/" 
+        },
+        {
+            title: "College Major Website Portfolio" ,
+            description: "Portfolio created for a client to present their work as a Harvard College A.B. Candidate in Theater, Dance & Media and Psychology. A responsive website that features multiple galleries exhibiting their work, links to social media, audiobooks, and upcoming events. Designed and Developed personally through WordPress. ",
+            imgUrl: projImg11,
+            url: "https://haleystarktheater.com/" 
         },
         {
             title: "Rose Floral Co" ,
